@@ -25,12 +25,13 @@ build {
   provisioner "shell" {
     inline = [
       "sudo yum update -y",
+      "sudo yum install -y python3-pip",
       "sudo yum install -y git",
       "sudo mkdir /opt/app",
       "sudo chmod -R 777 /opt/app",
       "cd /opt/app",
       "git clone https://github.com/stelligent/foundry-flask-example.git .",
-      "pip install -r requirements.txt"
+      "pip3 install -r requirements.txt"
     ]
   }
 }
