@@ -31,6 +31,8 @@ build {
       "sudo chmod -R 777 /opt/app",
       "cd /opt/app",
       "git clone https://github.com/stelligent/foundry-flask-example.git .",
+      "python3 -m venv venv",
+      "source venv/bin/activate",
       "pip3 install -r requirements.txt"
     ]
   }
